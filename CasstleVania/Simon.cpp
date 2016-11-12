@@ -6,45 +6,64 @@ void Simon::Update(float dt)
 	
 	if (!isJumping && Key_Down(DIK_LEFT))	// go to left
 	{
+		
 		this->Direction = 1;
 
-		this->velocity.x = 20;
-
-		if (this->_index >= 24) {
-			this->_index = 0;
-		}
-		else if (this->_index >= 3)
-		{
-			this->_index = 0;
-		}
-		else
-		{
-			this->_index++;
-		}
-
-		this->setIndex(this->_index);
-		//this->_currentFrame;
+		this->velocity.x = -20;
 		this->_position.x -= 3;
-		return;
+
+		this->timeFrameStart += dt;
+		if (this->timeFrameStart >= this->timePerImage)
+		{
+			this->timeFrameStart = 0.0f;
+
+			if (this->_index >= 24) {
+				this->_index = 0;
+			}
+			else if (this->_index >= 3)
+			{
+				this->_index = 0;
+			}
+			else
+			{
+				this->_index++;
+			}
+
+			this->setIndex(this->_index);
+			//this->_currentFrame;
+			
+
+
+
+		}
+		trace("current frame = ", this->_index);
 	}
 	if (!isJumping && Key_Down(DIK_RIGHT))	// go to right
 	{
 		this->Direction = -1;
 		this->velocity.x = 20;
 
-		if (this->_index <= 24) {
-			this->_index = 28;
-		}
-		else if (this->_index >= 31)
+		this->timeFrameStart += dt;
+		if (this->timeFrameStart >= this->timePerImage)
 		{
-			this->_index = 28;
+			this->timeFrameStart = 0.0f;
+
+			if (this->_index <= 24) {
+				this->_index = 28;
+			}
+			else if (this->_index >= 31)
+			{
+				this->_index = 28;
+			}
+			else
+			{
+				this->_index++;
+			}
+			this->setIndex(this->_index);
+			this->_currentFrame;
 		}
-		else
-		{
-			this->_index++;
-		}
-		this->setIndex(this->_index);
-		this->_currentFrame;
+
+		
 		this->_position.x += 3;
 	}
 	if (this->flag == 0)
@@ -69,7 +88,14 @@ void Simon::Update(float dt)
 		this->_currentFrame;
 	}
 
-	if (!isJumping && Key_Down(DIK_X)) // jump
+	// right release
+	if( GIsKeyRelease(G_KEY::KEY_RIGHT) || GIsKeyRelease(G_KEY::KEY_LEFT))
+	{
+		this->velocity.x = 0;
+	}
+	
+
+	if ( Key_Down(DIK_X)) // jump
 	{
 		clock_t start = clock();
 		if (this->Direction == 1)
@@ -87,12 +113,13 @@ void Simon::Update(float dt)
 		
 		if (!this->isJumping) // Only jump if it is not yet currently jumping
 		{
-			trace("start jumping", 0);
+			
 			timeJumpStart = 0;
 			this->timeFromStart = 0.0f;
 
 			lastPos = this->_position;
 			lastSpeed= this->velocity;
+
 			lastSpeed.y += this->speedJump;
 			lastSpeed.y += this->velocity.y;
 			this->isJumping = true;
@@ -114,14 +141,14 @@ void Simon::Update(float dt)
 		// -2 X^2  + 90X
 		this->_position.y = lastPos.y - (- G_GRAVITY.y * this->timeFromStart * this->timeFromStart + lastSpeed.y * this->timeFromStart);
 		this->_position.x = lastPos.x + lastSpeed.x * this->timeFromStart;
-		
+		trace("JUMPINGggggggggggg\npos x = ",this->velocity.x);
 
-		trace("this->timeFromStart =				 ", this->timeFromStart);
+		/*trace("this->timeFromStart =				 ", this->timeFromStart);
 		trace("speed0 * t =		 ", lastSpeed.y * this->timeFromStart);
 		trace("Gravity * t * t = ", G_GRAVITY.y * this->timeFromStart * this->timeFromStart);
 		trace("last pos y =			 ", lastPos.y);
 		trace("pos y =			 ", _position.y);
-
+		*/
 
 		deltaTime += 2;
 
@@ -132,6 +159,16 @@ void Simon::Update(float dt)
 			this->isJumping = false;
 			this->deltaTime = 10;
 			this->timeFromStart = 0;
+			if (this->Direction == 1)
+			{
+				this->_index = 0;
+
+			}
+			else if (this->Direction == -1)
+			{
+				this->_index = 28;
+			}
+			this->setIndex(this->_index);
 			// sau khi nhảy xong sẽ lại frame đầu ( t k biết làm)
 			// phải xét hướng trái hoặc phải trước khi nhảy để sau khi nhảy nó đứng đúng hướng đó
 			//......

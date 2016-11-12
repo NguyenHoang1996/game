@@ -17,7 +17,8 @@ public:
 	GVector2 gravity = GVector2(0,-90);
 	GVector2 position = GVector2(0,0);
 	void Update(float dt);
-
+	float timePerImage = 0.1f;
+	float timeFrameStart = 0.0f;
 	bool isJumping = false;
 	
 	void jump(GVector2 pos0, GVector2 speed0, float t0);

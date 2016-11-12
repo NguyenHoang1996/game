@@ -1,6 +1,7 @@
 #ifndef _DXINPUT_H
 #define _DXINPUT_H 1
 #include <dinput.h>
+#include "Global.h"
 
 //function prototypes
 int Init_DirectInput(HWND);
@@ -14,5 +15,6 @@ int Mouse_Button(int);
 int Mouse_X();
 int Mouse_Y();
 void Kill_Mouse();
+bool GIsKeyRelease(G_KEY vKey);
 
 #endif

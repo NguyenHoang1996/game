@@ -102,6 +102,8 @@ int Key_Down(int key)
 {
 	return (keys[key] & 0x80);
 }
+
+
 void Kill_Keyboard()
 {
 	if (G_KeyBoard != NULL)
@@ -111,3 +113,32 @@ void Kill_Keyboard()
 		G_KeyBoard = NULL;
 	}
 }
+
+//Kiểm tra xem có phím vKey vừa thả ra ko
+
+bool g_ArrKeys[256];
+bool GIsKeyRelease(G_KEY vKey)
+{
+	bool res = false;
+
+	if (vKey < 0 || vKey > 255)
+		return false;
+
+	if (GetKeyState(vKey) & 0xff00)
+	{
+		res = false;
+		g_ArrKeys[vKey] = true;
+	}
+	else
+	{
+		if (g_ArrKeys[vKey] == true)
+			res = true;
+		else
+			res = false;
+
+		g_ArrKeys[vKey] = false;
+	}
+
+	return res;
+}
+
