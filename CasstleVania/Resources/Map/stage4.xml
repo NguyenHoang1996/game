@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tilesmap columns="40" rows="12">
+  <MatrixIndex>
+    <Row id="0">1	2	3	4	5	4	6	4	5	4	5	5	7	4	8	4	5	4	5	4	5	4	5	4	9	10	11	4	6	12	8	5	4	7	8	4	6	7	8	1</Row>
+    <Row id="1">13	14	15	16	15	16	17	16	15	18	15	19	20	16	15	16	15	16	19	16	19	16	15	16	21	22	23	16	17	24	15	15	16	25	26	16	17	27	26	13</Row>
+    <Row id="2">13	18	28	29	28	29	30	29	28	31	28	32	30	29	28	29	28	29	30	29	30	29	28	33	34	26	20	18	35	26	36	37	38	39	15	33	40	41	26	13</Row>
+    <Row id="3">13	16	42	43	42	43	42	43	42	43	42	43	42	43	42	43	42	43	42	43	42	43	42	13	44	23	40	16	13	26	23	13	44	36	17	13	22	45	46	13</Row>
+    <Row id="4">13	16	25	16	24	16	25	16	25	16	27	16	24	16	25	16	24	16	25	16	24	16	25	13	44	27	22	16	13	26	24	13	44	26	47	48	49	50	16	13</Row>
+    <Row id="5">51	52	53	52	54	52	53	52	53	52	55	52	54	52	53	52	54	52	53	52	54	52	53	51	56	55	54	52	51	54	54	51	56	54	54	54	57	54	52	51</Row>
+    <Row id="6">58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	59	4	5	60	3	61	4	1</Row>
+    <Row id="7">58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	62	16	49	63	15	22	16	13</Row>
+    <Row id="8">58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	13	18	64	47	36	26	16	13</Row>
+    <Row id="9">58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	65	16	22	26	49	66	67	13</Row>
+    <Row id="10">58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	21	16	19	49	68	15	17	13</Row>
+    <Row id="11">58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	58	69	70	71	72	73	73	71	51</Row>
+  </MatrixIndex>
+  <TileSet Columns="10" Rows="8" Widthtile="100" Heighttile="100" FileName="stage4.png">
+    <Tiles>
+      <Tile Id="1" Name="tile_1">
+        <Rect X="0" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="2" Name="tile_2">
+        <Rect X="100" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="3" Name="tile_3">
+        <Rect X="200" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="4" Name="tile_4">
+        <Rect X="300" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="5" Name="tile_5">
+        <Rect X="400" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="6" Name="tile_6">
+        <Rect X="500" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="7" Name="tile_7">
+        <Rect X="600" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="8" Name="tile_8">
+        <Rect X="700" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="9" Name="tile_9">
+        <Rect X="800" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="10" Name="tile_10">
+        <Rect X="900" Y="0" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="11" Name="tile_11">
+        <Rect X="0" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="12" Name="tile_12">
+        <Rect X="100" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="13" Name="tile_13">
+        <Rect X="200" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="14" Name="tile_14">
+        <Rect X="300" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="15" Name="tile_15">
+        <Rect X="400" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="16" Name="tile_16">
+        <Rect X="500" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="17" Name="tile_17">
+        <Rect X="600" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="18" Name="tile_18">
+        <Rect X="700" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="19" Name="tile_19">
+        <Rect X="800" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="20" Name="tile_20">
+        <Rect X="900" Y="100" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="21" Name="tile_21">
+        <Rect X="0" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="22" Name="tile_22">
+        <Rect X="100" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="23" Name="tile_23">
+        <Rect X="200" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="24" Name="tile_24">
+        <Rect X="300" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="25" Name="tile_25">
+        <Rect X="400" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="26" Name="tile_26">
+        <Rect X="500" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="27" Name="tile_27">
+        <Rect X="600" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="28" Name="tile_28">
+        <Rect X="700" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="29" Name="tile_29">
+        <Rect X="800" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="30" Name="tile_30">
+        <Rect X="900" Y="200" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="31" Name="tile_31">
+        <Rect X="0" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="32" Name="tile_32">
+        <Rect X="100" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="33" Name="tile_33">
+        <Rect X="200" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="34" Name="tile_34">
+        <Rect X="300" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="35" Name="tile_35">
+        <Rect X="400" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="36" Name="tile_36">
+        <Rect X="500" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="37" Name="tile_37">
+        <Rect X="600" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="38" Name="tile_38">
+        <Rect X="700" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="39" Name="tile_39">
+        <Rect X="800" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="40" Name="tile_40">
+        <Rect X="900" Y="300" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="41" Name="tile_41">
+        <Rect X="0" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="42" Name="tile_42">
+        <Rect X="100" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="43" Name="tile_43">
+        <Rect X="200" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="44" Name="tile_44">
+        <Rect X="300" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="45" Name="tile_45">
+        <Rect X="400" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="46" Name="tile_46">
+        <Rect X="500" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="47" Name="tile_47">
+        <Rect X="600" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="48" Name="tile_48">
+        <Rect X="700" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="49" Name="tile_49">
+        <Rect X="800" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="50" Name="tile_50">
+        <Rect X="900" Y="400" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="51" Name="tile_51">
+        <Rect X="0" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="52" Name="tile_52">
+        <Rect X="100" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="53" Name="tile_53">
+        <Rect X="200" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="54" Name="tile_54">
+        <Rect X="300" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="55" Name="tile_55">
+        <Rect X="400" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="56" Name="tile_56">
+        <Rect X="500" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="57" Name="tile_57">
+        <Rect X="600" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="58" Name="tile_58">
+        <Rect X="700" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="59" Name="tile_59">
+        <Rect X="800" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="60" Name="tile_60">
+        <Rect X="900" Y="500" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="61" Name="tile_61">
+        <Rect X="0" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="62" Name="tile_62">
+        <Rect X="100" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="63" Name="tile_63">
+        <Rect X="200" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="64" Name="tile_64">
+        <Rect X="300" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="65" Name="tile_65">
+        <Rect X="400" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="66" Name="tile_66">
+        <Rect X="500" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="67" Name="tile_67">
+        <Rect X="600" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="68" Name="tile_68">
+        <Rect X="700" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="69" Name="tile_69">
+        <Rect X="800" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="70" Name="tile_70">
+        <Rect X="900" Y="600" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="71" Name="tile_71">
+        <Rect X="0" Y="700" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="72" Name="tile_72">
+        <Rect X="100" Y="700" Width="100" Height="100" />
+      </Tile>
+      <Tile Id="73" Name="tile_73">
+        <Rect X="200" Y="700" Width="100" Height="100" />
+      </Tile>
+    </Tiles>
+  </TileSet>
+</Tilesmap>

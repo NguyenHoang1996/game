@@ -1,0 +1,4 @@
+﻿  Simon.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\odin\desktop\game-master\casstlevania\simon.cpp(131): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
+  CasstleVania.vcxproj -> C:\Users\Odin\Desktop\game-master\Debug\CasstleVania.exe
