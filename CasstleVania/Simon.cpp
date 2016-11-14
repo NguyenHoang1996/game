@@ -28,7 +28,7 @@ void Simon::Update(float dt)
 			{
 				this->_index++;
 			}
-
+			this->setScaleX(1);
 			this->setIndex(this->_index);
 			//this->_currentFrame;
 			
@@ -38,34 +38,65 @@ void Simon::Update(float dt)
 		}
 		trace("current frame = ", this->_index);
 	}
-	if (!isJumping && Key_Down(DIK_RIGHT))	// go to right
+	if (!isJumping && Key_Down(DIK_RIGHT))	// go to left
 	{
+
 		this->Direction = -1;
+
 		this->velocity.x = 20;
+		this->_position.x += 3;
 
 		this->timeFrameStart += dt;
 		if (this->timeFrameStart >= this->timePerImage)
 		{
 			this->timeFrameStart = 0.0f;
 
-			if (this->_index <= 24) {
-				this->_index = 28;
+			if (this->_index >= 24) {
+				this->_index = 0;
 			}
-			else if (this->_index >= 31)
+			else if (this->_index >= 3)
 			{
-				this->_index = 28;
+				this->_index = 0;
 			}
 			else
 			{
 				this->_index++;
 			}
+			this->setScaleX(-1);
 			this->setIndex(this->_index);
-			this->_currentFrame;
-		}
 
-		
-		this->_position.x += 3;
+		}
+		trace("current frame = ", this->_index);
 	}
+
+	//if (!isJumping && Key_Down(DIK_RIGHT))	// go to right
+	//{
+	//	this->Direction = -1;
+	//	this->velocity.x = 20;
+
+	//	this->timeFrameStart += dt;
+	//	if (this->timeFrameStart >= this->timePerImage)
+	//	{
+	//		this->timeFrameStart = 0.0f;
+
+	//		if (this->_index <= 24) {
+	//			this->_index = 28;
+	//		}
+	//		else if (this->_index >= 31)
+	//		{
+	//			this->_index = 28;
+	//		}
+	//		else
+	//		{
+	//			this->_index++;
+	//		}
+	//		this->setIndex(this->_index);
+	//		this->_currentFrame;
+	//	}
+
+	//	
+	//	this->_position.x += 3;
+	//}
 	if (this->flag == 0)
 	{
 		this->_index = 0;
@@ -79,10 +110,12 @@ void Simon::Update(float dt)
 		if (this->Direction == 1)
 		{
 			this->_index = 4;
+			this->setScaleX(1);
 		}
 		else if (this->Direction == -1)
 		{
-			this->_index = 27;
+			this->_index = 4;
+			this->setScaleX(-1);
 		}
 		this->setIndex(this->_index);
 		this->_currentFrame;
@@ -101,10 +134,12 @@ void Simon::Update(float dt)
 		if (this->Direction == 1)
 		{
 			this->_index = 4;
+			this->setScaleX(1);
 		}
 		else if (this->Direction == -1)
 		{
-			this->_index = 27;
+			this->_index = 4;
+			this->setScaleX(-1);
 		}
 		/*this->_position.y = this->_position.y+ this->velocity.y*dtTime;
 		this->velocity.y= this->velocity.y + this->gravity.y*dtTime;
@@ -149,7 +184,20 @@ void Simon::Update(float dt)
 		trace("last pos y =			 ", lastPos.y);
 		trace("pos y =			 ", _position.y);
 		*/
+		/*if (this->_position.y + G_GRAVITY.y*4 < lastPos.y  )
+		{
+			if (this->Direction == 1)
+			{
+				this->_index = 0;
+				this->setScaleX(1);
 
+			}
+			else if (this->Direction == -1)
+			{
+				this->_index = 0;
+				this->setScaleX(-1);
+			}
+		}*/
 		deltaTime += 2;
 
 		// Kiểm tra xem simom quat trở lại mặt đất chưa?
@@ -162,11 +210,13 @@ void Simon::Update(float dt)
 			if (this->Direction == 1)
 			{
 				this->_index = 0;
+				this->setScaleX(1);
 
 			}
 			else if (this->Direction == -1)
 			{
-				this->_index = 28;
+				this->_index = 0;
+				this->setScaleX(-1);
 			}
 			this->setIndex(this->_index);
 			// sau khi nhảy xong sẽ lại frame đầu ( t k biết làm)
@@ -174,6 +224,45 @@ void Simon::Update(float dt)
 			//......
 		}
 
+	}
+	if (!this->isJumping && Key_Down(DIK_Z))
+	{
+		
+				if (this->Direction == 1)
+				{
+					this->roi->setPosition(this->_position.x + 67, this->_position.y + 10, 1.0f);
+					this->roi->setScaleX(1);
+					this->timeFrameStart += dt;
+					if (this->timeFrameStart >= this->timePerImage)
+					{
+						this->timeFrameStart = 0.0f;
+						if (this->_index < 5)
+						{
+							this->_index = 5;
+						}else if (this->_index >= 7)
+						{
+							this->_index = 5;
+							this->roi->_texture.loadFromFile(L"roi3.png");
+							this->roi->render();
+						}
+						else 
+						{
+							this->_index++;
+							this->roi->_texture.loadFromFile(L"roi1.png");
+							this->roi->render();
+						}
+					}
+					this->setIndex(this->_index);
+					this->setScaleX(1);
+				}
+				else
+				{
+					this->roi->setPosition(this->_position.x - 67, this->_position.y + 10, 1.0f);
+					this->roi->setScaleX(-1);
+					this->_index = 5;
+					this->setIndex(this->_index);
+					this->setScaleX(-1);
+				}
 	}
 }
 

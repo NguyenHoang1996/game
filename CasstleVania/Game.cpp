@@ -2,6 +2,7 @@
 #include "Global.h"
 #include "Input.h"
 #include "utils.h"
+#include "GAudio.h"
 long start = GetTickCount();
 
 Game::Game()
@@ -16,11 +17,14 @@ int Game::Game_Init(HWND hWnd)
 {
 	Init_DirectInput(hWnd);
 	Init_Keyboard(hWnd);
-	g_Timer = new	Timer();
+	
+	g_Timer = new Timer();
 	g_FPS = 60;
-	simon = new Simon(L"Simon.png", 48, 8);
+	simon = new Simon(L"Simon.png", 24, 8);
 	simon->setPosition(400, 470, 1.0f);
+	simon->roi = new Sprite(L"roi0.png", 1, 1);
 	simon->_index = 0;
+	
 	return stage3->init();
 }
 
@@ -49,6 +53,7 @@ void Game::Game_Run(HWND hWnd)
 			if (stage3 != NULL)
 				stage3->draw();
 			simon->render();
+			simon->roi->render();
 			G_Device->EndScene();
 		}
 	}

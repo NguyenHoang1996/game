@@ -31,7 +31,6 @@ public:
 	GVector2			_origin;				// gốc của Transform, dùng để xoay, scale (anchor: điểm neo)
 	GVector2			_anchorPoint;
 	float					_zIndex;
-
 	void setFrameRect();
 	void setCurrentFrame();
 	void updateBounding();

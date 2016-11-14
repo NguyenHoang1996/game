@@ -20,7 +20,7 @@ public:
 	float timePerImage = 0.1f;
 	float timeFrameStart = 0.0f;
 	bool isJumping = false;
-	
+	Sprite* roi;
 	void jump(GVector2 pos0, GVector2 speed0, float t0);
 
 	GVector2 lastPos;

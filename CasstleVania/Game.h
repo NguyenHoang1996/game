@@ -6,13 +6,13 @@
 #include "Stage3.h"
 #include "Sprite.h"
 #include "Simon.h"
-
+#include "GAudio.h"
 
 class Game {
 private:
 	Stage3 *stage3;
 	Simon* simon;
-
+	
 public:
 	Game();
 	~Game();

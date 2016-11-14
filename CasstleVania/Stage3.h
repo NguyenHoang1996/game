@@ -4,7 +4,7 @@
 
 #include "Global.h"
 #include "Scene.h"
-
+#include "GAudio.h"
 #include "Map.h"
 
 class Stage3 : public Scene {
@@ -20,12 +20,11 @@ public:
 	void update(float dt) override;
 	void draw() override;
 	void release() override;
-
+	GAudio	musicStage3;
 
 private:
 	Map *background;
-
-
+	void ChayAmThanh();
 
 };
 #endif // !__STAGE3_H__

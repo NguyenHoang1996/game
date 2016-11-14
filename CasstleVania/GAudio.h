@@ -3,13 +3,14 @@
 #define _DXAUDIO_H
 
 #include "dsutil.h"
+
 class GAudio
 {
 public:
 	GSoundManager *dsound;
 
 	int Init_DirectSound(HWND);
-	GSound *LoadSound(char *);
+	GSound *LoadSound(LPTSTR);
 	void PlaySound(GSound *);
 	void LoopSound(GSound *);
 	void StopSound(GSound *);
