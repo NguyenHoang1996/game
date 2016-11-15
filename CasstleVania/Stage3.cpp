@@ -22,7 +22,7 @@ int Stage3::init()
 {
 	trace("init game",0);
 	background = Map::LoadFromFile("Resources//Map//stage4.xml", tileID::MAPSTAGE4);
-	_viewport = new Viewport( 3200, 600, G_ScreenWidth, G_ScreenHeight);
+	_viewport = new Viewport( 2048, 384, G_ScreenWidth, G_ScreenHeight);
 	this->musicStage3.Init_DirectSound(G_hWnd);
 	this->musicStage3.LoopSound(this->musicStage3.LoadSound(L"Resources\\Sounds\\music\\Stage4.wav"));
 	return 1;

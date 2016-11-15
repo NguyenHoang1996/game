@@ -21,7 +21,7 @@ int Game::Game_Init(HWND hWnd)
 	g_Timer = new Timer();
 	g_FPS = 60;
 	simon = new Simon(L"Simon.png", 24, 8);
-	simon->setPosition(400, 470, 1.0f);
+	simon->setPosition(400, G_GroundHeight, 1.0f);
 	simon->roi = new Sprite(L"roi0.png", 1, 1);
 	simon->_index = 0;
 	

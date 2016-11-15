@@ -36,9 +36,13 @@ void Map::draw(LPD3DXSPRITE spriteHandle, Viewport* viewport)
 		viewport->getPositionWorld().y - viewport->getHeight()
 	};	// top lớn hơn bottom (sử dụng hệ toạ độ đề các)
 
+	// chuyển sang map position
+	// trong khung viewport có những tile nào
+	//
+
 	int iBegin = max(screenRectEx.left / _framewidth, 0);
 	int iEnd = min(screenRectEx.right / _framewidth + 1, _mapSize.x);
-	int jBegin = _mapSize.y - min(screenRectEx.top / _frameheight + 1, _mapSize.y);
+	int jBegin = _mapSize.y - min(screenRectEx.top / _frameheight, _mapSize.y);
 	int jEnd = _mapSize.y - max(screenRectEx.bottom / _frameheight, 0);
 	
 	GVector2 pos;
@@ -53,7 +57,7 @@ void Map::draw(LPD3DXSPRITE spriteHandle, Viewport* viewport)
 
 			/*
 			this->_mapIndex[j][i]: id của tile tại cột i, hàng j
-			pos:
+			pos: vi tri cua tile dang xet trong world
 			
 			*/
 		}

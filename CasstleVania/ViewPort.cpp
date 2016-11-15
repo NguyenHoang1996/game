@@ -1,4 +1,4 @@
-#include "Viewport.h"
+﻿#include "Viewport.h"
 
 Viewport::Viewport()
 {
@@ -54,6 +54,8 @@ GVector3 Viewport::getPositionInViewport(GVector3* position)
 	mt._42 = _positionWorld.y;
 
 	D3DXVec3Transform(&posViewport, position, &mt);
+
+	posViewport.y += (G_WindowHeight - G_ScreenHeight); // cộng với khoảng cách chừa ở trên để hiện thị thông tin
 
 	return GVector3(posViewport.x, posViewport.y, posViewport.z);
 }
