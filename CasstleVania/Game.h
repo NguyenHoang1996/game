@@ -7,12 +7,15 @@
 #include "Sprite.h"
 #include "Simon.h"
 #include "GAudio.h"
-
+#include "IntroScene.h"
+#include "TileScreen.h"
 class Game {
 private:
 	Stage3 *stage3;
 	Simon* simon;
-	
+	IntroScene *intro;
+	TileScreen* tileScreen;
+	bool isIntroFinished = false;
 public:
 	Game();
 	~Game();

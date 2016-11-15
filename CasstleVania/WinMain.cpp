@@ -38,7 +38,7 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
 	WNDCLASSEX wc;
 	wc.cbSize = sizeof(wc);
 	/*Fill the struct with info*/
-	wc.style = CS_HREDRAW | CS_VREDRAW;
+	wc.style = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
 	wc.lpfnWndProc = (WNDPROC)WinProc;
 	wc.cbClsExtra = 0;
 	wc.cbWndExtra = 0;
@@ -72,7 +72,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	G_hWnd = CreateWindow(
 		G_GameTitle,
 		G_GameTitle,
-		WS_OVERLAPPEDWINDOW,
+		WS_OVERLAPPEDWINDOW,	
 		360,
 		150,
 		wr.right - wr.left,
@@ -117,7 +117,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
-		float curTime = GetCurrentTime();
 		/*Process game loop (prevents running after window is closed)*/
 		game->Game_Run(G_hWnd);
 	}

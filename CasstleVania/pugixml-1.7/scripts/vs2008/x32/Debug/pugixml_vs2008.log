@@ -1,4 +1,15 @@
-﻿  pugixml.cpp
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(D:\NM_Game\New folder\game\CasstleVania\pugixml-1.7\scripts\vs2008\x32\pugixml.lib) does not match the Library's OutputFile property value (D:\NM_Game\New folder\game\CasstleVania\pugixml-1.7\scripts\vs2008\x32\pugixmld.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(pugixml) does not match the Library's OutputFile property value (pugixmld). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
-  pugixml_vs2008.vcxproj -> D:\NM_Game\New folder\game\CasstleVania\pugixml-1.7\scripts\vs2008\x32\pugixml.lib
+﻿Build started 11/15/2016 08:27:20 PM.
+     1>Project "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\pugixml-1.7\scripts\pugixml_vs2008.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         D:\Visual2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"vs2008\x32\Debug\\" /Fd"vs2008\x32\pugixmld.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\pugixml.cpp
+         pugixml.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(C:\Users\Odin\Desktop\Game - master\game\CasstleVania\pugixml-1.7\scripts\vs2008\x32\pugixml.lib) does not match the Library's OutputFile property value (C:\Users\Odin\Desktop\Game - master\game\CasstleVania\pugixml-1.7\scripts\vs2008\x32\pugixmld.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(pugixml) does not match the Library's OutputFile property value (pugixmld). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         D:\Visual2013\VC\bin\Lib.exe /OUT:"vs2008\x32\pugixmld.lib" /NOLOGO vs2008\x32\Debug\pugixml.obj
+         pugixml_vs2008.vcxproj -> C:\Users\Odin\Desktop\Game - master\game\CasstleVania\pugixml-1.7\scripts\vs2008\x32\pugixml.lib
+     1>Done Building Project "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\pugixml-1.7\scripts\pugixml_vs2008.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.08

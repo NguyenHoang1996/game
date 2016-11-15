@@ -102,9 +102,6 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="IntroScene.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
     <ClCompile Include="Stage3.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
@@ -113,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="Timer.cpp">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileScreen.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -167,9 +167,6 @@
     <ClInclude Include="Scene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="IntroScene.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
     <ClInclude Include="Stage3.h">
       <Filter>Scene</Filter>
     </ClInclude>
@@ -181,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileScreen.h">
+      <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

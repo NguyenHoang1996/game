@@ -100,7 +100,7 @@ LPDIRECT3DSURFACE9 LoadSurface(char* filename, D3DCOLOR transcolor)
 	}
 	return image;
 }
-LPDIRECT3DTEXTURE9 LoadTexture(char *filename, D3DCOLOR transcolor)
+LPDIRECT3DTEXTURE9 LoadTexture(LPWSTR filename, D3DCOLOR transcolor)
 {
 	LPDIRECT3DTEXTURE9 texture = NULL;
 
@@ -109,11 +109,11 @@ LPDIRECT3DTEXTURE9 LoadTexture(char *filename, D3DCOLOR transcolor)
 	/*standard Windows return value*/
 	HRESULT result;
 
-	result = D3DXGetImageInfoFromFileA(filename, &info);
+	result = D3DXGetImageInfoFromFile(filename, &info);
 	if (result != D3D_OK)
 		return NULL;
 
-	D3DXCreateTextureFromFileExA(
+	D3DXCreateTextureFromFileExW(
 		G_Device,
 		filename,
 		info.Width,
@@ -132,11 +132,11 @@ LPDIRECT3DTEXTURE9 LoadTexture(char *filename, D3DCOLOR transcolor)
 		return NULL;
 	return texture;
 }
-D3DXIMAGE_INFO GetInfo(char *filename)
+D3DXIMAGE_INFO GetInfo(LPWSTR filename)
 {
 	D3DXIMAGE_INFO info;
 	HRESULT result;
 
-	result = D3DXGetImageInfoFromFileA(filename, &info);
+	result = D3DXGetImageInfoFromFile(filename, &info);
 	return info;
 }

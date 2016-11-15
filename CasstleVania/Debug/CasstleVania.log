@@ -1,91 +1,38 @@
-﻿  WinMain.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\winmain.cpp(120): warning C4244: 'initializing' : conversion from 'DWORD' to 'float', possible loss of data
-  ViewPort.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\viewport.cpp(80): warning C4244: '=' : conversion from 'FLOAT' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\viewport.cpp(81): warning C4244: '=' : conversion from 'FLOAT' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\viewport.cpp(82): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\viewport.cpp(83): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-  utils.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Timer.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  TileSet.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Tile.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Texture.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\texture.cpp(113): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
-  Stage3.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\stage3.cpp(25): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-  SpriteManager.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\spritemanager.cpp(209): warning C4066: characters beyond first in wide-character constant ignored
-  Sprite.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(4): warning C4305: 'initializing' : truncation from 'double' to 'const float'
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(62): warning C4244: 'argument' : conversion from 'int' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(223): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(224): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(225): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(226): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(236): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(237): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(238): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(239): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(281): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(286): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(291): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(296): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(343): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(344): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(354): warning C4244: '=' : conversion from 'FLOAT' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(355): warning C4244: '=' : conversion from 'FLOAT' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(356): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(357): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(360): warning C4244: 'argument' : conversion from 'LONG' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(361): warning C4244: 'argument' : conversion from 'LONG' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(362): warning C4244: 'argument' : conversion from 'LONG' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(363): warning C4244: 'argument' : conversion from 'LONG' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(372): warning C4244: '=' : conversion from 'FLOAT' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(373): warning C4244: '=' : conversion from 'FLOAT' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(374): warning C4244: '=' : conversion from 'FLOAT' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\sprite.cpp(375): warning C4244: '=' : conversion from 'FLOAT' to 'LONG', possible loss of data
-  Simon.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\simon.cpp(39): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-d:\nm_game\new folder\game\casstlevania\simon.cpp(69): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-d:\nm_game\new folder\game\casstlevania\simon.cpp(206): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
-  Scene.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Map.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\map.cpp(37): warning C4244: 'initializing' : conversion from 'FLOAT' to 'LONG', possible loss of data
-d:\nm_game\new folder\game\casstlevania\map.cpp(44): warning C4244: 'initializing' : conversion from 'FLOAT' to 'int', possible loss of data
-d:\nm_game\new folder\game\casstlevania\map.cpp(45): warning C4244: 'initializing' : conversion from 'FLOAT' to 'int', possible loss of data
-d:\nm_game\new folder\game\casstlevania\map.cpp(46): warning C4244: 'initializing' : conversion from 'FLOAT' to 'int', possible loss of data
-d:\nm_game\new folder\game\casstlevania\map.cpp(54): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\map.cpp(98): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
-d:\nm_game\new folder\game\casstlevania\map.cpp(99): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
-  IntroScene.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Input.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Global.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  GAudio.cpp
-  Game.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-d:\nm_game\new folder\game\casstlevania\game.cpp(24): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-  dsutil.cpp
-  DGraphic.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Generating Code...
-  Compiling...
-  Device.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Generating Code...
-  CasstleVania.vcxproj -> D:\NM_Game\New folder\game\Debug\CasstleVania.exe
+﻿Build started 11/15/2016 10:35:03 PM.
+     1>Project "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\CasstleVania.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Simon.cpp
+         Simon.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\odin\desktop\game - master\game\casstlevania\simon.cpp(39): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\odin\desktop\game - master\game\casstlevania\simon.cpp(69): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\odin\desktop\game - master\game\casstlevania\simon.cpp(218): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
+       Link:
+         D:\Visual2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Odin\Desktop\Game - master\game\Debug\CasstleVania.exe" /INCREMENTAL /NOLOGO d3d9.lib d3dx9.lib dsound.lib dxguid.lib winmm.lib dinput8.lib DxErr.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Odin\Desktop\Game - master\game\Debug\CasstleVania.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Odin\Desktop\Game - master\game\Debug\CasstleVania.lib" /MACHINE:X86 Debug\Device.obj
+         Debug\DGraphic.obj
+         Debug\dsutil.obj
+         Debug\Game.obj
+         Debug\GAudio.obj
+         Debug\Global.obj
+         Debug\Input.obj
+         Debug\Map.obj
+         Debug\Scene.obj
+         Debug\Simon.obj
+         Debug\Sprite.obj
+         Debug\SpriteManager.obj
+         Debug\Stage3.obj
+         Debug\Texture.obj
+         Debug\Tile.obj
+         Debug\TileScreen.obj
+         Debug\TileSet.obj
+         Debug\Timer.obj
+         Debug\utils.obj
+         Debug\ViewPort.obj
+         Debug\WinMain.obj
+         "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\pugixml-1.7\scripts\vs2008\x32\pugixmld.lib"
+         CasstleVania.vcxproj -> C:\Users\Odin\Desktop\Game - master\game\Debug\CasstleVania.exe
+     1>Done Building Project "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\CasstleVania.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.13

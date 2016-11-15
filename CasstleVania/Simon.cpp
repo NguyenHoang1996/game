@@ -10,7 +10,7 @@ void Simon::Update(float dt)
 		this->Direction = 1;
 
 		this->velocity.x = -20;
-		this->_position.x -= 3;
+		this->_position.x -= 2;
 
 		this->timeFrameStart += dt;
 		if (this->timeFrameStart >= this->timePerImage)
@@ -44,7 +44,7 @@ void Simon::Update(float dt)
 		this->Direction = -1;
 
 		this->velocity.x = 20;
-		this->_position.x += 3;
+		this->_position.x += 2;
 
 		this->timeFrameStart += dt;
 		if (this->timeFrameStart >= this->timePerImage)
@@ -125,6 +125,18 @@ void Simon::Update(float dt)
 	if( GIsKeyRelease(G_KEY::KEY_RIGHT) || GIsKeyRelease(G_KEY::KEY_LEFT))
 	{
 		this->velocity.x = 0;
+		if (this->Direction == 1)
+		{
+			this->_index = 0;
+			this->setScaleX(1);
+			this->setIndex(this->_index);
+		}
+		else if (this->Direction == -1)
+		{
+			this->_index = 0;
+			this->setScaleX(-1);
+			this->setIndex(this->_index);
+		}
 	}
 	
 

@@ -3,6 +3,7 @@
 #include "Input.h"
 #include "utils.h"
 #include "GAudio.h"
+#include "IntroScene.h"
 long start = GetTickCount();
 
 Game::Game()
@@ -17,50 +18,69 @@ int Game::Game_Init(HWND hWnd)
 {
 	Init_DirectInput(hWnd);
 	Init_Keyboard(hWnd);
+
+
+	//init 
+	tileScreen = new TileScreen();
+	tileScreen->init();
 	
 	g_Timer = new Timer();
 	g_FPS = 60;
+	stage3->init();
 	simon = new Simon(L"Simon.png", 24, 8);
 	simon->setPosition(400, G_GroundHeight, 1.0f);
 	simon->roi = new Sprite(L"roi0.png", 1, 1);
 	simon->_index = 0;
 	
-	return stage3->init();
+	return 1;
 }
 
 void Game::Game_Run(HWND hWnd)
-{	
-	/*fpTime = curTime;
-	curTime = GetCurrentTime();
-	dtTime = curTime - fpTime;
-	if (dtTime > 0.15f)
-		dtTime = 0.15f;
-	simon->Update(dtTime);
-	trace("dtTime = ", dtTime);*/
+{
+
 	g_DeltaTime = g_Timer->Tick();
 	if (g_DeltaTime > 1.0f / (float)g_FPS)
 	{
 		g_Timer->FreshTime();
-		simon->Update(g_DeltaTime);
 		Poll_Keyboard();
-		/*if (GetTickCount() - start >= 60)
-		{
-			start = GetTickCount();
-			
-		}*/
-		if (G_Device->BeginScene())
-		{
-			if (stage3 != NULL)
-				stage3->draw();
-			simon->render();
-			simon->roi->render();
-			G_Device->EndScene();
+		//simon->roi->render();
+		if (isIntroFinished == false){
+			tileScreen->draw();
+			if (tileScreen->viewEnd)
+			{
+				tileScreen = NULL;
+				isIntroFinished = true;
+			}
 		}
-	}
-	G_Device->Present(NULL, NULL, NULL, NULL);
-}
+		else if (isIntroFinished){
+			simon->Update(g_DeltaTime);
+			if (G_Device->BeginScene())
+			{
+				if (stage3 != NULL)
+					stage3->draw();
+				simon->render();
+				G_Device->EndScene();
+			}
+		}
 
+		G_Device->Present(NULL, NULL, NULL, NULL);
+		/*if (tileScreen->viewEnd){
+			simon->Update(g_DeltaTime);
+			if (G_Device->BeginScene())
+			{
+			stage3->draw();
+			simon->render();
+			G_Device->EndScene();
+			}
+			G_Device->Present(NULL, NULL, NULL, NULL);
+			}
+			else{
+			tileScreen->draw();
+			}*/
+	}
+}
 void Game::Game_End(HWND hWnd)
 {
 	stage3->release();
 }
+
