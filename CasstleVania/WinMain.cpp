@@ -7,7 +7,7 @@
 #include "Game.h"
 #include "utils.h"
 
-RECT wr = { 0, 0, G_ScreenWidth	,G_ScreenHeight };
+RECT wr = { 0, 0, G_WindowWidth	,G_WindowHeight };
 
 Game* game = new Game();
 

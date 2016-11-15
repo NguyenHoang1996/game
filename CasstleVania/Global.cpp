@@ -35,8 +35,10 @@ int			G_MaxSize;
 int			G_MinSize;
 
 RECT		G_WindowSize;
-int			G_ScreenWidth = 800; //640;	//640	//1024	//1366
-int			G_ScreenHeight = 600; //480;	//480	//768	//768
+int			G_ScreenWidth = 512; //640;	//640	//1024	//1366
+int			G_ScreenHeight = 384; //480;	//480	//768	//768
+int			G_WindowWidth = 512;
+int			G_WindowHeight = 512;
 
 //
 //GLOBAL VARIANT
@@ -69,7 +71,7 @@ void SetFPS(int _FPS)
 	g_FPS = _FPS;
 }
 GVector2	G_GRAVITY = GVector2(0,10);
-int	G_GroundHeight = 470;
+int	G_GroundHeight = 435;
 
 DIMOUSESTATE				mouse_state;
 LPDIRECTINPUT8				G_DirectInput;		// The DirectInput object         
