@@ -9,12 +9,14 @@
 #include "GAudio.h"
 #include "IntroScene.h"
 #include "TileScreen.h"
+#include "UI.h"
 class Game {
 private:
 	Stage3 *stage3;
 	Simon* simon;
 	IntroScene *intro;
 	TileScreen* tileScreen;
+	UI* uI;
 	bool isIntroFinished = false;
 public:
 	Game();

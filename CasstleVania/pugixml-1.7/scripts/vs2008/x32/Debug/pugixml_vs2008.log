@@ -1,4 +1,4 @@
-﻿Build started 11/15/2016 08:27:20 PM.
+﻿Build started 11/16/2016 02:22:43 PM.
      1>Project "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\pugixml-1.7\scripts\pugixml_vs2008.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          D:\Visual2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"vs2008\x32\Debug\\" /Fd"vs2008\x32\pugixmld.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\pugixml.cpp
@@ -12,4 +12,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.08
+Time Elapsed 00:00:01.81

@@ -114,6 +114,9 @@
     <ClCompile Include="TileScreen.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Sprite</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dsutil.h">
@@ -181,6 +184,9 @@
     </ClInclude>
     <ClInclude Include="TileScreen.h">
       <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>Sprite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

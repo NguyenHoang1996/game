@@ -1,44 +1,13 @@
-﻿Build started 11/16/2016 10:49:02 AM.
+﻿Build started 11/16/2016 02:52:44 PM.
      1>Project "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\CasstleVania.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Visual2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp Simon.cpp WinMain.cpp
-         Simon.cpp
+         D:\Visual2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt UI.cpp
+         UI.cpp
          c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-     1>c:\users\odin\desktop\game - master\game\casstlevania\simon.cpp(203): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
-         Generating Code...
-         Compiling...
-         Game.cpp
-         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-     1>c:\users\odin\desktop\game - master\game\casstlevania\game.cpp(31): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         WinMain.cpp
-       Link:
-         D:\Visual2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Odin\Desktop\Game - master\game\Debug\CasstleVania.exe" /INCREMENTAL /NOLOGO d3d9.lib d3dx9.lib dsound.lib dxguid.lib winmm.lib dinput8.lib DxErr.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Odin\Desktop\Game - master\game\Debug\CasstleVania.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Odin\Desktop\Game - master\game\Debug\CasstleVania.lib" /MACHINE:X86 Debug\Device.obj
-         Debug\DGraphic.obj
-         Debug\dsutil.obj
-         Debug\Game.obj
-         Debug\GAudio.obj
-         Debug\Global.obj
-         Debug\Input.obj
-         Debug\Map.obj
-         Debug\Scene.obj
-         Debug\Simon.obj
-         Debug\Sprite.obj
-         Debug\SpriteManager.obj
-         Debug\Stage3.obj
-         Debug\Texture.obj
-         Debug\Tile.obj
-         Debug\TileScreen.obj
-         Debug\TileSet.obj
-         Debug\Timer.obj
-         Debug\utils.obj
-         Debug\ViewPort.obj
-         Debug\WinMain.obj
-         "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\pugixml-1.7\scripts\vs2008\x32\pugixmld.lib"
-         CasstleVania.vcxproj -> C:\Users\Odin\Desktop\Game - master\game\Debug\CasstleVania.exe
-     1>Done Building Project "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\CasstleVania.vcxproj" (Build target(s)).
+     1>c:\users\odin\desktop\game - master\game\casstlevania\ui.cpp(14): error C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 d:\visual2013\vc\include\stdlib.h(937) : see declaration of 'itoa'
+     1>Done Building Project "C:\Users\Odin\Desktop\Game - master\game\CasstleVania\CasstleVania.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:03.02
+Time Elapsed 00:00:01.20

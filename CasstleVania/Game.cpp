@@ -23,7 +23,9 @@ int Game::Game_Init(HWND hWnd)
 	//init 
 	tileScreen = new TileScreen();
 	tileScreen->init();
-	
+	uI = new UI(L"Resources\\UI\\UI.png",1,1);
+	uI->setPosition(260, 50, 1.0f);
+	uI->CreateFontUI();
 	g_Timer = new Timer();
 	g_FPS = 60;
 	stage3->init();
@@ -50,6 +52,8 @@ void Game::Game_Run(HWND hWnd)
 			{
 				tileScreen = NULL;
 				isIntroFinished = true;
+				uI->render();
+				uI->WriteFont(1);
 			}
 		}
 		else if (isIntroFinished){
@@ -58,6 +62,7 @@ void Game::Game_Run(HWND hWnd)
 			{
 				if (stage3 != NULL)
 					stage3->draw();
+				
 				simon->render();
 				G_Device->EndScene();
 			}
@@ -82,5 +87,9 @@ void Game::Game_Run(HWND hWnd)
 void Game::Game_End(HWND hWnd)
 {
 	stage3->release();
+	simon->release();
+	intro->release();
+	tileScreen->release();
+	uI->release();
 }
 
