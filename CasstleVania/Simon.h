@@ -19,6 +19,7 @@ public:
 	void Update(float dt);
 	float timePerImage = 0.1f;
 	float timeFrameStart = 0.0f;
+	float timeFrameStartAction = 0.0f; // thoi gian de bat dau danh
 	bool isJumping = false;
 	Sprite* roi;
 	void jump(GVector2 pos0, GVector2 speed0, float t0);
@@ -33,5 +34,18 @@ private:
 	int speedJump = 30;
 
 	float timeFromStart = 0.0f;
+
+	bool isAction = false;
+	bool isSitting = false;
+	bool isStanding = true;
+	bool isWalking = false;
+	bool isZPress = false;
+	enum status{
+		JUMP,
+		SIT,
+		STAND
+	};
+
+	status st = status::STAND;
 
 };
